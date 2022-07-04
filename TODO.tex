@@ -1,0 +1,62 @@
+[V] find and implement the best way to pass the hit ditection and direction
+[V] make an intermidiate Enemy class and add a faceDir getter and an attack power value
+[V] find and implement the best way to add invicibility frames after getting hit
+[V] add health field to entity class and make it so Player takes damage when hit
+[V] change size to hitbox
+[V] make it so the invincibility effect is caused by drawing an invisible section in Update
+	instead of not drawing at all
+[V] make enemy stunned upon getting hit
+[V] make enemies flash while they are stunned
+[V] make it so enemy dies when health drops to 0
+[V] make a flame animation when an enemy dies
+[V] make the flame in the middle of the enemy
+[ ] make it so player dies when health drops to 0
+[V] make enemies drop hearts
+[V] make entity's texture field semi-static
+[V] decide whether to make PIVOT abstract or virtual
+[ ] make sure every StateMachine's Enter method is called
+[V] decide whether Whip should hold a reference to Player or Level
+	(I think it should hold a reference to Level rn...)
+	{decided on Player}
+[V] decide whether or not to make a Level class to be used in Game.ScreensSM.LevelScreen
+	(I think the answer is that I should...)
+[V] make it so that player takes damage when falling but returns to its previous position
+	instead of dying
+[V] consider changing the invincibility from -1 to 0
+[V] add whip
+[V] add hitbox to the whip
+[V] make whip actually work as intended
+[X] think of a way to make player-level interaction happen inside Game instead of Player
+	{thought about it, it's just gonna be complicated and messy}
+[V] try using sprite's origin instead of offset and see if it works
+[V] add vertical offset/origin functionality to setSprite
+[V] fix falling when hitbox changes size
+[X] make a seperate state for falling since falling and jumping differ in "animations"
+	{decided not to do that cause I like falling and jumping working the same}
+[V] change the preKill implementation so that the enemy has a free hand to do stuff before it is removed
+[V] extract Damage from Whip to pass to Enemy on hit
+[V] decide on whether I want to have health seperatly for player and enemy or not
+[V] decide if I want to make it so that enemies aren't able to hit when stunned (in the original they do hit)
+[X] decide if I want to allow pogo jumping (kinda forgot what's "pogo jumping" since i wrote that...)
+[V] change the game stracture so that player is inside level and all the interactions happen there
+[V] make a parent Item class with a fade, grab and virtual fall functions
+[V] implement level scrolling
+[V] decide on how to implement individual levels
+[ ] devide the Level public functions into interfaces to pass to each type of Entity
+[X] consider relocating setSprite method calls to the draw methods
+[V] implement monster spawners
+[V] fix respawn
+[V] make stairs
+[V] make climbing stairs functionality
+[V] fix walk stopping when pressing up
+[V] make it so that player can enter stairs from above
+[ ] make it so that player can enter stairs from jump
+[V] make it so player can leave stairs from any point
+[V] make it so when the keys are unpressed in Stairs0State, it goes back to walkState
+[V] make it so that player can move on stairs with left and right as well
+[V] make it so player can attack from stairs
+[ ] pause the game when moving the window
+[ ] update player sprites to be all from the site (and not from the pattern)
+[V] fix jump out of stairs direction
+[V] fix stairs-to-walk animation
+[ ] make background
