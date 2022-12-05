@@ -25,6 +25,8 @@ class Room {
         _groups = new IEntityGroup<Entity>[] {
             _enemies, _items, _particles, _candles
         };
+        // _items.Append(new Zombie(this, new Vector2f()));
+        // _groups[1].Append(new Zombie(this, new Vector2f(0, 0)));
         _spawners = new Spawner[preset.GetSpanwers.Length];
         _teleporters = new Teleporter[preset.GetTeleporters.Length];
         _movers = new Mover[preset.GetMovers.Length];

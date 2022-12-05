@@ -1,6 +1,8 @@
 using System.Collections;
 using SFML.Graphics;
 
+
+
 interface IEntityGroup<out T> : IEnumerable<T> {
     public void EmptyKillStack();
 }
